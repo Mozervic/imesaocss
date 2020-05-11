@@ -1,0 +1,44 @@
+body {
+    font: normal 18px monospace;
+    background-color:#A1ADC3;
+    /*/como botar blur no background/*/
+   background-image:url('https://i1.wp.com/cedem.com.br/2017/wp-content/uploads/2019/06/Background-site-04.jpg?ssl=1');
+    background-size:auto 125vh;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color:#B8A0A0;
+    
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around; /*/jsutify-content só funciona em conjunto com o display:flex ;/*/
+  }
+  
+  .menu li{
+    list-style: none;
+  }
+  
+  /*/links sobre portifólio contato/*/
+  a{
+    color:black;
+    text-decoration: none;
+  }
+  
+  /*/quando o mouse passar por cima/*/
+  a:hover{
+    text-decoration: underline;
+    font: normal 19pt Monospace;
+  }
+  
+  /*/Jr. Frontend Dev/*/
+  /*/Victor Reinaldo Melo Mozer/*/
+  .site-title,
+  .site-subtitle{
+    text-align: center;
+    font-style: italic;
+  }
+  
+  
