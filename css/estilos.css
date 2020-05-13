@@ -1,26 +1,80 @@
+/*/soft reset do css/*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
-    font: normal 18px monospace;
+    
     background-color:#A1ADC3;
     /*/como botar blur no background/*/
-   background-image:url('https://i1.wp.com/cedem.com.br/2017/wp-content/uploads/2019/06/Background-site-04.jpg?ssl=1');
-    background-size:auto 125vh;
+   background-image:url('https://i.ibb.co/fQyvrhD/background.png');
+    background-size:auto 220vh;
     height: 100vh;
+    font-family: 'PT Mono', monospace;
+    font: 10px
+  }
+
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+ .site-title {
+    font-size: 3em;
+    
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+  .site-title{
+    font-size: 4em;
+    
+  }
+}
+
+/* breakpoint */
+
+
+  header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
   }
   
   .menu {
-    background-color:#B8A0A0;
-    
+    background-color:#AEBFC9;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   .menu ul {
     display: flex;
     justify-content: space-around; /*/jsutify-content só funciona em conjunto com o display:flex ;/*/
+
   }
   
   .menu li{
     list-style: none;
   }
   
+  .menu a {
+   
+   display: block;
+    padding: 2vh;
+  }
+
   /*/links sobre portifólio contato/*/
   a{
     color:black;
@@ -35,10 +89,44 @@ body {
   
   /*/Jr. Frontend Dev/*/
   /*/Victor Reinaldo Melo Mozer/*/
-  .site-title,
+  
+  .site-title{
+    font-size: 2em;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+
+  }
+
   .site-subtitle{
     text-align: center;
     font-style: italic;
+    font-family: 'Pangolin', cursive;
+
+  }
+
+  .portfolio{
+    padding: 2em;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+/*/alinha tanto os ícones quanto a legenda deles ao centro/*/
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .portfolio h2 {
+    font-size: 2em;
+    font-family: 'PT Mono', monospace;
+    margin-bottom: 1em;
+
+  }
+  .img-portfolio {
+    widows: 175px;
+    height: 175px;
+
   }
   
   
