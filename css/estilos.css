@@ -27,6 +27,21 @@ body {
     font-size: 3em;
     
   }
+
+  .avatar {
+    float: left;
+    
+  }
+  .avatar img{
+    width: 300px;
+    height: 340px;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  
+
   .contato {
     justify-content: center;
     text-align: center;
@@ -126,10 +141,38 @@ body {
     font-family: 'Pangolin', cursive;
 
   }
-  .contato
-  .portfolio{
+  
+
+  @media (min-width: 1200px) {
+    .container{
     padding: 2em;
-    min-height: 100vh
+    min-height: 200vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  }
+
+  .sobre p{
+    color: black;
+    text-indent: 3em;
+    text-align: justify;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+
+  }
+  .sobre a{
+    transition: background-color 0.3s, color 0.3s;
+    color: white;
+    text-decoration: underline;
+  }
+  .sobre a:hover{
+    
+    background-color:#AEBFC9;;
+    color:black;
+    
   }
 
   
@@ -202,7 +245,7 @@ body {
     width: 175px;
     height: 175px;
     transition: width 0.5s, height 0.5s, transform 0.3s;
-    
+    padding:1em;
     transform: scale(1);
     
 
@@ -212,6 +255,7 @@ body {
     height: 160px;
     text-size-adjust: 18px;
     transform: scale(1.2) rotate(15deg);
+    
     
   }
 
