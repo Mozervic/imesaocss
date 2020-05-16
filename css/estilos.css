@@ -87,7 +87,7 @@ body {
   .menu {
     background-color:#AEBFC9;
     position: fixed;
-    width: 100vw;
+    width: 120vw;
     top: 0;
     z-index: 1;
   }
@@ -209,7 +209,7 @@ body {
   
 
   @media (min-width: 300px){
-    .sobre {
+    .sobretxt {
       margin-left: 2em;
       margin-right: 2em;
     }
@@ -224,7 +224,7 @@ body {
   }
 
   @media (min-width: 570px){
-    .sobre {
+    .sobretxt {
       margin-left: 2em;
       margin-right: 2em;
     }
@@ -239,7 +239,7 @@ body {
 
   @media (min-width: 770px){
 
-      .sobre {
+      .sobretxt {
         margin-left: 5em;
         margin-right: 5em;
       }
