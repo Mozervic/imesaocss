@@ -10,8 +10,8 @@ body {
     
     background-color:#A1ADC3;
     /*/como botar blur no background/*/
-   background-image:url('https://i.ibb.co/fQyvrhD/background.png');
-    background-size:auto 220vh;
+   background-image:url('https://i.ibb.co/dtHH6v9/background2-0blur.png');
+    background-size:auto 250vh;
     height: 220vh;
     font-family: 'PT Mono', monospace;
     font: 10px
@@ -33,8 +33,8 @@ body {
     
   }
   .avatar img{
-    width: 300px;
-    height: 340px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin-left: 1em;
     margin-right: 1em;
@@ -176,9 +176,15 @@ body {
 
   }
   .sobre{
+    margin-left: 8em;
+    margin-right: 8em;
     margin-bottom: 25vh;
-
+    /*/background: whitesmoke;
+    border-radius: 3%;
+    box-shadow: 5px 5px 20px white;/*/
+    
   }
+
   .sobre p{
     color: black;
     text-indent: 3em;
@@ -186,11 +192,11 @@ body {
     margin-bottom: 1em;
     margin-right: 1em;
     margin-left: 1em;
-
+    
   }
   .sobre a{
     transition: background-color 0.3s, color 0.3s;
-    color: white;
+    color: rgb(29, 100, 141);
     text-decoration: underline;
   }
   .sobre a:hover{
@@ -208,6 +214,7 @@ body {
       gap: 2em;
       grid-template-columns: 150px 150px;
       justify-content: center;
+      ;
     }
 
   }
@@ -233,7 +240,7 @@ body {
   @media (min-width: 1024px){
       .portfolio .grid {
         display: grid;
-        gap: 5em;
+        gap: 3em;
         grid-template-columns: 150px 150px 150px 150px;
         justify-content: center;
       }
@@ -255,18 +262,30 @@ body {
 /*/alinha tanto os ícones quanto a legenda deles ao centro/*/
   .portfolio {
     margin-bottom: 30vh;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 20px whitesmoke;
+    border-radius: 30%;
+    margin-left: 8em;
+    margin-right: 8em;
+    
+    
   }
   .contato h2,
   .portfolio h2 {
     text-align: left;
     font-size: 2em;
+    text-align: center;
   }
-
+  .label{
+    margin-bottom: 2em;
+  }
   .portfolio h2 {
     font-size: 2em;
     font-family: 'PT Mono', monospace;
-    margin-bottom: 1.5em;
-
+    margin-bottom: 0.5em;
+    text-align: center;
+    opacity: 1;
+    
   }
   .img-portfolio {
     width: 175px;
@@ -274,6 +293,8 @@ body {
     transition: width 0.5s, height 0.5s, transform 0.3s;
     padding:1em;
     transform: scale(1);
+    opacity: 1;
+    
     
 
   }
@@ -284,6 +305,15 @@ body {
     transform: scale(1.2) rotate(15deg);
     
     
+  }
+
+  .contato {
+    background-color: whitesmoke ;
+    margin-left: 27em;
+    margin-right: 27em;
+    margin-bottom: 1em;
+    border-radius: 25%;
+    box-shadow: 0px 0px 20px whitesmoke;
   }
 
   .contato .icons {
