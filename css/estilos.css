@@ -208,7 +208,11 @@ body {
 
   
 
-  @media (min-width: 410px){
+  @media (min-width: 300px){
+    .sobre {
+      margin-left: 2em;
+      margin-right: 2em;
+    }
     .portfolio .grid {
       display: grid;
       gap: 2em;
@@ -220,6 +224,10 @@ body {
   }
 
   @media (min-width: 570px){
+    .sobre {
+      margin-left: 2em;
+      margin-right: 2em;
+    }
     .portfolio .grid {
       display: grid;
       gap: 2em;
@@ -230,22 +238,42 @@ body {
   }
 
   @media (min-width: 770px){
-    .portfolio .grid {
+
+      .sobre {
+        margin-left: 5em;
+        margin-right: 5em;
+      }
+      .portfolio {
+      margin-left: 4em;
+      margin-right: 4em;
+    }
+    
+      .portfolio .grid {
       display: grid;
       gap: 2em;
-      grid-template-columns: 150px 150px 150px 150px;
       justify-content: center;
+      
     }
 
   @media (min-width: 1024px){
-      .portfolio .grid {
+        .portfolio {
+      margin-left: 5em;
+      margin-right: 5em;
+    }
+    
+        .portfolio .grid {
         display: grid;
         gap: 3em;
-        grid-template-columns: 150px 150px 150px 150px;
+        grid-template-columns: 110px 110px 110px 110px;
         justify-content: center;
       }
 
   @media (min-width: 1360px){
+        .portfolio {
+          margin-left: 8em;
+          margin-right: 8em;
+        }
+
         .portfolio .grid {
           display: grid;
           gap: 7em;
@@ -294,10 +322,15 @@ body {
     padding:1em;
     transform: scale(1);
     opacity: 1;
-    
-    
-
   }
+
+  .img-portfolio:active{
+    width: 160px;
+    height: 160px;
+    text-size-adjust: 18px;
+    transform: scale(1.2) rotate(15deg);
+  }
+  
   .img-portfolio:hover {
     width: 160px;
     height: 160px;
