@@ -12,7 +12,7 @@ body {
     /*/como botar blur no background/*/
    background-image:url('https://i.ibb.co/fQyvrhD/background.png');
     background-size:auto 220vh;
-    height: 155vh;
+    height: 220vh;
     font-family: 'PT Mono', monospace;
     font: 10px
   }
@@ -89,6 +89,7 @@ body {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
   }
   
   .menu ul {
@@ -127,6 +128,27 @@ body {
   
   /*/Jr. Frontend Dev/*/
   /*/Victor Reinaldo Melo Mozer/*/
+
+  .titulos {
+    /*/transform: scale(0.2) translateY(50vh);
+    opacity:0.3;/*/
+    
+    animation: linear 0.7s introtitulo;
+  }
+/*/animação do título/*/
+  @keyframes introtitulo {
+    from{
+      transform: scale(0.2) translateY(50vh);
+    opacity:0.3;
+
+    }
+
+    to {
+      transform: scale(1) translateY(0);
+    opacity:1;
+
+    }
+  }
   
   .site-title{
     font-size: 2em;
@@ -153,7 +175,10 @@ body {
   }
 
   }
+  .sobre{
+    margin-bottom: 25vh;
 
+  }
   .sobre p{
     color: black;
     text-indent: 3em;
@@ -228,7 +253,9 @@ body {
 
 
 /*/alinha tanto os ícones quanto a legenda deles ao centro/*/
-  
+  .portfolio {
+    margin-bottom: 30vh;
+  }
   .contato h2,
   .portfolio h2 {
     text-align: left;
